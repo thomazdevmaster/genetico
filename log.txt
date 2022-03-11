@@ -1,0 +1,269 @@
+
+    **********************ALGORÍTMO GENÉTICO*************************
+    -----------------------------------------------------------------
+     Execução do algorítmo genético para maximizar a função 'x²-3x+4'
+     com as seguintes definições:
+
+     limite inferior .............................-10 
+     limite superior ..............................10
+     população inicial .............................4
+     taxa de mutacao .............................1.0%
+     taxa de crossOver ..........................70.0%
+     quant. gerações ...............................5
+
+    
+Deseja alterar algum valor? (S/N): População inicial com 4 indivíduos
+----------------------------------
+|  0  |  +0000   |
+| -4  |  -0100   |
+|  8  |  +1000   |
+|  2  |  +0010   |
+resolvendo f( 0 ) = 4
+resolvendo f(-4 ) = 32
+resolvendo f( 8 ) = 44
+resolvendo f( 2 ) = 2
+
+
+para a 1ª geração, o indivíduo mais apto é 8, pois seu resultado é 44
+
+resolvendo f( 8 ) = 44
+resolvendo f( 0 ) = 4
+resolvendo f( 8 ) = 44
+resolvendo f( 0 ) = 4
+Logo 8 passa a ser o novo melhor valor
+Os pais selecionados foram
+ -4  |       ['-', '0', '1', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  1
+pai .............-4|['-', '0', '1', '0', '0']
+mae ..............8|['+', '1', '0', '0', '0']
+primeiro filho ..-8|['-', '1', '0', '0', '0']
+segundo filho ....4|['+', '0', '1', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+0 | ['+', '0', '0', '0', '0']
+-4 | ['-', '0', '1', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+2 | ['+', '0', '0', '1', '0']
+--------------------------------
+Os pais selecionados foram
+  8  |       ['+', '1', '0', '0', '0']        
+ -4  |       ['-', '0', '1', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  0
+pai ..............8|['+', '1', '0', '0', '0']
+mae .............-4|['-', '0', '1', '0', '0']
+primeiro filho ..-4|['-', '0', '1', '0', '0']
+segundo filho ....8|['+', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+0 | ['+', '0', '0', '0', '0']
+-4 | ['-', '0', '1', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+2 | ['+', '0', '0', '1', '0']
+--------------------------------
+=======================================
+resolvendo f(-8 ) = 92
+resolvendo f( 4 ) = 8
+resolvendo f(-4 ) = 32
+resolvendo f( 8 ) = 44
+
+para a 2ª geração, o indivíduo mais apto é -8, pois seu resultado é 92
+
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+Logo -8 passa a ser o novo melhor valor
+Os pais selecionados foram
+ -4  |       ['-', '0', '1', '0', '0']        
+ -8  |       ['-', '1', '0', '0', '0']        
+Não ocorreu crossover
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+4 | ['+', '0', '1', '0', '0']
+-4 | ['-', '0', '1', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+--------------------------------
+Os pais selecionados foram
+  8  |       ['+', '1', '0', '0', '0']        
+ -8  |       ['-', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  1
+pai ..............8|['+', '1', '0', '0', '0']
+mae .............-8|['-', '1', '0', '0', '0']
+primeiro filho ...8|['+', '1', '0', '0', '0']
+segundo filho ...-8|['-', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+4 | ['+', '0', '1', '0', '0']
+-4 | ['-', '0', '1', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+--------------------------------
+=======================================
+resolvendo f(-4 ) = 32
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+resolvendo f(-8 ) = 92
+
+para a 3ª geração, o indivíduo mais apto é -8, pois seu resultado é 92
+
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+Logo o melhor valor continua sendo -8
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+Não ocorreu crossover
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-4 | ['-', '0', '1', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+--------------------------------
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  0
+pai .............-8|['-', '1', '0', '0', '0']
+mae ..............8|['+', '1', '0', '0', '0']
+primeiro filho ...8|['+', '1', '0', '0', '0']
+segundo filho ...-8|['-', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-4 | ['-', '0', '1', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+--------------------------------
+=======================================
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+resolvendo f( 8 ) = 44
+resolvendo f(-8 ) = 92
+
+para a 4ª geração, o indivíduo mais apto é -8, pois seu resultado é 92
+
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+Logo o melhor valor continua sendo -8
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  2
+pai .............-8|['-', '1', '0', '0', '0']
+mae ..............8|['+', '1', '0', '0', '0']
+primeiro filho ..-8|['-', '1', '0', '0', '0']
+segundo filho ....8|['+', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+--------------------------------
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+Não ocorreu crossover
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+--------------------------------
+=======================================
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+
+para a 5ª geração, o indivíduo mais apto é -8, pois seu resultado é 92
+
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+resolvendo f(-8 ) = 92
+Logo o melhor valor continua sendo -8
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  3
+pai .............-8|['-', '1', '0', '0', '0']
+mae ..............8|['+', '1', '0', '0', '0']
+primeiro filho ..-8|['-', '1', '0', '0', '0']
+segundo filho ....8|['+', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+--------------------------------
+Os pais selecionados foram
+ -8  |       ['-', '1', '0', '0', '0']        
+  8  |       ['+', '1', '0', '0', '0']        
+
+-----------------------------
+          crossover
+-----------------------------
+Ponto do corte definido em  0
+pai .............-8|['-', '1', '0', '0', '0']
+mae ..............8|['+', '1', '0', '0', '0']
+primeiro filho ...8|['+', '1', '0', '0', '0']
+segundo filho ...-8|['-', '1', '0', '0', '0']
+Não ocorreu mutação! para o 1º filho
+Não ocorreu mutação! para o 2º filho
+-------população atual----------
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+-8 | ['-', '1', '0', '0', '0']
+8 | ['+', '1', '0', '0', '0']
+--------------------------------
+=======================================
+resolvendo f(-8 ) = 92
+resolvendo f( 8 ) = 44
+resolvendo f( 8 ) = 44
+resolvendo f(-8 ) = 92
+================================================================
+resolvendo f(-8 ) = 92
+O resultado final é -8, pois seu retorno é 92
